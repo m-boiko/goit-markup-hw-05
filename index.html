@@ -61,7 +61,11 @@
       <section class="solution">
         <div class="container solution-container">
           <h1 class="solution-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="odrder-button solution-order-button" type="button">
+          <button
+            class="odrder-button solution-order-button"
+            type="button"
+            data-modal-open
+          >
             Замовити послугу
           </button>
         </div>
@@ -471,5 +475,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-clas-btn" data-modal-close>
+          <svg class="modal-close-icon" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
